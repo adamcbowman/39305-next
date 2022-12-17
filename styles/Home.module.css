@@ -100,7 +100,7 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
   min-width: 300px;
-  min-height: 150px;
+  min-height: 250px;
 }
 
 .red {
