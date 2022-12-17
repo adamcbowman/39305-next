@@ -2,6 +2,7 @@ NextJs App for my homelab directory
 
 ## build/run in container: 
 `docker build -t 39305HomePage . `
+
 `docker run --name 39305HomePage -d -p 0.0.0.0:80:3000 39305HomePage`
 
 
