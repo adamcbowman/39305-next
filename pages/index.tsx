@@ -69,23 +69,23 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="http://192.168.0.1">
+          <a href="...">
             <Card
               colour="lightblue"
               name="Bell Modem/Router "
               description="Admin Interface for web connection"
               linksList={{
-                Admin: "http://192.168.0.1",
+                Admin: "....",
               }}
             />
           </a>
-          <a href="http://192.168.0.10">
+          <a href="...">
             <Card
               colour="lightgreen"
               name="tpLink Wifi Router "
               description="Admin interface for Wifi"
               linksList={{
-                Admin: "http://192.168.0.10",
+                Admin: "....",
               }}
             />
           </a>
