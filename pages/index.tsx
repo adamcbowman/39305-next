@@ -95,19 +95,19 @@ export default function Home() {
               name="Bell Modem/Router "
               description="Admin Interface for web connection"
               linksList={{
-                Admin: "http://192.168.0.1",
+                Admin: "....",
               }}
             ip="192.168.0.1"
             glances={false}
             />
           </a>
-          <a href="http://192.168.0.10">
+          <a href="...">
             <Card
               colour="lightgreen"
               name="tpLink Wifi Router "
               description="Admin interface for Wifi"
               linksList={{
-                Admin: "http://192.168.0.10",
+                Admin: "....",
               }}
             ip="192.168.0.10"
             glances={false}
