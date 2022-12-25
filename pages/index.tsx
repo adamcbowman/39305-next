@@ -32,14 +32,18 @@ export default function Home() {
               NodeRed: "http://redpi.local:1880",
               Portainer: "http://redpi.local:9000",
             }}
+            ip="192.168.0.23"
+            glances={true}
           />
           <Card
             colour="yellow"
             name="yellowPi🍋"
-            description="PiHole, Wireguard, Airplay & Spotify Connect"
+            description="Secondary PiHole, shAirplay & Spotify Connect"
             linksList={{
               PiHole: "http://yellowpi.local/admin",
             }}
+            ip="192.168.0.28"
+            glances={true}
           />
           <Card
             colour="green"
@@ -48,6 +52,8 @@ export default function Home() {
             linksList={{
               HomeAssistant: "http://hass.acbhome.online",
             }}
+            ip="192.168.0.13"
+            glances={false}
           />
           <Card
             colour="blue"
@@ -57,6 +63,8 @@ export default function Home() {
               WebServer: "http://bluepi.local",
               MysteriumVPN: "http://bluepi.local:4449",
             }}
+            ip="192.168.0.158"
+            glances={true}
           />
           <Card
             colour="purple"
@@ -65,10 +73,22 @@ export default function Home() {
             linksList={{
               QbitTorrent: "http://purplepi.local:8080/",
             }}
+            ip="192.168.0.30"
+            glances={true}
+          />
+          <Card
+            colour="white"
+            name="blackPi🍫"
+            description="PiHole, PiVPN/Wireguard"
+            linksList={{
+              PiHole: "http://pi.hole/admin",
+            }}
+            ip="192.168.0.16"
+            glances={true}
           />
         </div>
 
-        <div className={styles.grid}>
+        <div id="infra" className={styles.grid}>
           <a href="http://192.168.0.1">
             <Card
               colour="lightblue"
@@ -77,6 +97,8 @@ export default function Home() {
               linksList={{
                 Admin: "http://192.168.0.1",
               }}
+            ip="192.168.0.1"
+            glances={false}
             />
           </a>
           <a href="http://192.168.0.10">
@@ -87,6 +109,8 @@ export default function Home() {
               linksList={{
                 Admin: "http://192.168.0.10",
               }}
+            ip="192.168.0.10"
+            glances={false}
             />
           </a>
         </div>

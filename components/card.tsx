@@ -1,12 +1,15 @@
 import styles from "../styles/Home.module.css";
+import Glances from "./glances";
 
 export default function Card( props: any ) {
     // deconstruct props
-    const { colour, name, description, linksList } = props;
+    const { colour, name, description, linksList, ip, glances } = props;
     return (
         <div className={styles.card} >
         <h2>
-            <span style= {{ color: colour }} >{name}</span>&rarr;
+            
+            <span style= {{ color: colour }} >{name}</span>&rarr; { glances === true && <Glances ip={ip}/>} 
+            
         </h2>
         <p>{description}</p>
         <ul >
@@ -16,6 +19,7 @@ export default function Card( props: any ) {
                 </li>
             ))}
         </ul>
+       
         </div>
     );
     
